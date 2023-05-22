@@ -1,0 +1,120 @@
+body {
+    font-family: Ubuntu, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main > section {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+main > section:first-child {
+    max-width: 400px;
+}
+
+@media all and (max-width: 900px){
+    main > section {
+        max-width: none !important;
+        flex-basis: 100%;
+    }
+}
+
+.form-group input {
+    margin-top: 0.6rem;
+    display: block;
+    padding: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.form-group input:focus {
+    border-color: dodgerblue;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td {
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+table th:first-child,
+table td:first-child {
+    text-align: center;
+}
+
+table th:nth-child(2),
+table td:nth-child(2),
+table th:last-child,
+table td:last-child {
+    text-align: left;
+}
+
+thead {
+    background-color: rgb(0, 65, 131);
+    color: white;
+}
+
+table tbody tr:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    outline: none;
+    border: none;
+    min-width: 100px;
+    border-radius: 5px;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: rgb(0, 104, 207);
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: rgba(0, 104, 207, 0.9);
+}
+
+button[type="submit"]:active
+ {
+    background-color: rgb(0, 58, 116);
+}
+
+button[type="reset"] {
+    background-color: orange;
+    color: black;
+}
+
+button[type="reset"]:hover,
+button[type="reset"]:focus {
+    background-color: rgba(255, 166, 0, 0.9);
+}
+
+button[type="reset"]:active {
+    background-color:  rgba(179, 116, 0, 0.9);
+}
