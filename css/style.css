@@ -118,3 +118,8 @@ button[type="reset"]:focus {
 button[type="reset"]:active {
     background-color:  rgba(179, 116, 0, 0.9);
 }
+
+.invalid {
+    border-color: red !important;
+    color: red;
+}
